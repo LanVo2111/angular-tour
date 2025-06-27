@@ -1,0 +1,87 @@
+.header {
+  background-color: #629d23;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_action {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    li {
+      position: relative;
+      background-color: #fff;
+      transition: all 0.3s ease-in;
+      cursor: pointer;
+      width: 92px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      div {
+        position: relative;
+      }
+
+      &:hover {
+        background-color: #000;
+      }
+
+      .pro-cart {
+        position: absolute;
+        top: -12px;
+        right: -8px;
+        color: #fff;
+        background-color: #629d23;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.logo {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.2s;
+  color: #fff;
+}
+
+.nav-list a:hover {
+  color: #333;
+}
+
+.cart-icon i {
+  font-size: 22px;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.cart-icon i:hover {
+  color: #007bff;
+}

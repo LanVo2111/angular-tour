@@ -1,0 +1,23 @@
+<section class="categories">
+  <div class="inner">
+    <h2 class="sec-title">Featured Categories</h2>
+    <ul class="categories_list list">
+      <li class="categories_item categories_item-{{ item.id }}" *ngFor="let item of categories">
+        <a>
+          <div class="image">
+            <img
+              src="{{IMAGE_URL}}/{{ item.image }}"
+              alt="Cake & Milk"
+              width="80"
+              height="80"
+            />
+          </div>
+          <div class="content">
+            <h4 class="categories_title">{{ item.title }}</h4>
+            <span>{{ item.count }} items</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

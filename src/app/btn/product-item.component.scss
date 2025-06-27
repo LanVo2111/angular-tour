@@ -1,0 +1,23 @@
+.product-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  padding: 24px;
+  transition: 0.2s;
+  &:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #BCE3C9;
+  }
+  .product-title {
+    color: rgb(37, 61, 78);
+  }
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(59, 183, 126);
+  }
+}
+
+

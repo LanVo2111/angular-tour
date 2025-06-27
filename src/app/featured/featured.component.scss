@@ -1,0 +1,35 @@
+.featured {
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  &_item {
+    width: calc(20% - 12.8px);
+    background-color: #f4f6fa;
+    .wrapper {
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    img {
+      transition: all 0.3s;
+    }
+    &:hover {
+      img {
+        transform: translateY(-10px);
+      }
+    }
+    .title {
+      color: #242424;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    p {
+      color: #adadad;
+    }
+  }
+}

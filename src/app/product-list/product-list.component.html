@@ -1,0 +1,34 @@
+<section class="products">
+  <div class="inner">
+    <h2 class="sec-title">Popular Products</h2>
+    <ul class="products-list">
+      <li class="product-item" *ngFor="let item of products">
+        <a href="/product/{{item.id}}">
+          <div class="product-image">
+            <img
+              src="{{IMAGE_URL}}/{{ item.image }}"
+              alt=""
+              width="246"
+              height="246"
+            />
+          </div>
+          <div class="product-content">
+            <span class="category">Snack</span>
+            <h3 class="product-title">
+              {{item.name}}
+            </h3>
+            <div class="bottom">
+              <p class="product-price">
+                <span>${{item.price}}</span>
+                <span class="sale">${{item.salePrice}}</span>
+              </p>
+              <button class="btn-cart">
+                <span class="material-icons">shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

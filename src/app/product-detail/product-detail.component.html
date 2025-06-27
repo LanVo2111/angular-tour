@@ -1,0 +1,75 @@
+<div class="productDetail-page">
+  <div class="inner">
+    <div class="wrapper-topDetail">
+      <div class="main-img">
+        <img
+          src="{{ IMAGE_URL }}/{{ productData.image }}"
+          width="250"
+          height="250"
+        />
+      </div>
+      <div class="productDetail-infor">
+        <h2 class="productDetail-name">{{ productData.name }}</h2>
+        <p class="productDetail-des">{{ productData.description }}</p>
+        <p class="product-price">
+          <span>${{ productData.price }}</span>
+          <span class="sale">${{ productData.salePrice }}</span>
+        </p>
+        <table>
+          <tr>
+            <th>Infor</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Carbo</td>
+            <td>{{ productData.inforTable?.carbo }}</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>{{ productData.inforTable?.protein }}</td>
+          </tr>
+          <tr>
+            <td>Minerals</td>
+            <td>{{ productData.inforTable?.minerals }}</td>
+          </tr>
+          <tr>
+            <td>Nutrient</td>
+            <td>{{ productData.inforTable?.nutrient }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <section class="related-product">
+      <h2 class="sec-title">Related Products</h2>
+      <ul class="products-list">
+        <li class="product-item" *ngFor="let item of relatedProducts">
+          <a href="/product/{{ item.id }}">
+            <div class="product-image">
+              <img
+                src="{{ IMAGE_URL }}/{{ item.image }}"
+                alt=""
+                width="246"
+                height="246"
+              />
+            </div>
+            <div class="product-content">
+              <span class="category">Snack</span>
+              <h3 class="product-title">
+                {{ item.name }}
+              </h3>
+              <div class="bottom">
+                <p class="product-price">
+                  <span>${{ item.price }}</span>
+                  <span class="sale">${{ item.salePrice }}</span>
+                </p>
+                <button class="btn-cart">
+                  <span class="material-icons">shopping_cart</span>
+                </button>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<section class="featured">
+  <div class="inner">
+    <ul class="featured_list">
+      <li class="featured_item" *ngFor="let item of featureList">
+        <div class="wrapper">
+          <img src="assets/images/icons/{{item.icon}}" alt="{{item.title}}" width="60" height="60" />
+          <div class="content">
+            <h3 class="title">{{item.title}}</h3>
+           <p>{{item.description}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

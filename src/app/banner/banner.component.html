@@ -1,0 +1,11 @@
+<section class="banner">
+  <div class="slider-container">
+    <div class="slider" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'" >
+      <div class="slide" *ngFor="let item of slides">
+        <img [src]="item" alt="Slide" />
+      </div>
+    </div>
+    <button class="nav left" (click)="prev()">‹</button>
+    <button class="nav right" (click)="next()">›</button>
+  </div>
+</section>
